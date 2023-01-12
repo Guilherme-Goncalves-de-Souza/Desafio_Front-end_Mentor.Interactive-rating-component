@@ -1,0 +1,219 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Weights: 400, 700
+*/
+
+// max-witdh: 415px padding só cima e baixow
+
+$font: 'Overpass', sans-serif;
+$color-p: hsl(217, 12%, 63%);
+$bg-img-avaliation: #262f38;
+$bg-main: #171e28;
+$bg-body: hsl(216, 12%, 8%);
+$bg-button: hsl(25, 97%, 53%);
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+    font-family: $font;
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $bg-body;
+
+    padding: 0px 25px;
+}
+
+.bg__img, .bg__item{
+    background-color: $bg-img-avaliation;
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 99px;
+}
+
+p{
+    color: $color-p;
+
+    width: 100%;
+}
+
+h1, .main__header{
+    color: white;
+    margin-bottom: 20px;
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+main{
+    background-color: $bg-main;
+    max-width: 385px;
+    height: 385px;
+    border-radius: 15px;
+
+    .main__container{
+        padding: 25px;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .is-selected{
+            background-color: $bg-button;
+
+            li{
+                color: white !important;
+            }
+        }
+
+        .is-not-clicked{
+            pointer-events: none;
+        }
+
+        .main__choiceAvaliation{
+
+            .main__content{
+
+                .bg__img{
+                    margin-bottom: 20px;
+                }
+
+                p{
+                    margin-bottom: 30px;
+                }
+            }
+
+            .main__avaliation{
+
+                form{
+                    ul.form-list{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        list-style: none;
+
+                        margin-bottom: 25px;
+
+                        .bg__item{
+                            color: white;
+                            padding-top: 3px;
+                            cursor: pointer;
+
+                            &:hover{
+                                background-color: #7c8798;
+                                
+                                li{
+                                    color: white;
+                                }
+                            }
+                        }
+
+                        li{
+                            color: $color-p;
+                        }
+                    }
+
+                    .btn{
+                        width: 100%;
+                        height: 45px;
+                        border-radius: 99px;
+                        background-color: $bg-button;
+                        color: rgb(246, 214, 155);
+                        font-size: 13px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        cursor: pointer;
+
+                        &:hover{
+                            background-color: white;
+                            color: $bg-button;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main__avaliationSuccess{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p{
+                text-align: center;
+                width: 101%;
+            }
+
+            img{
+                margin-bottom: 20px;
+            }
+
+            .main__selected{
+                background-color: $bg-img-avaliation;
+                height: 30px;
+                width: 170px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 99px;
+
+                margin-bottom: 30px;
+
+                p{
+                    color: $bg-button;
+                }
+            }
+        }
+
+        .is-none{
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 425px){
+    body{
+        font-size: 15px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    .bg__img, .bg__item{
+        width: 45px;
+        height: 45px;
+    }
+
+    .btn{
+        font-size: 14px !important;
+    }
+}

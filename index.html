@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guilherme Gonçalves de Souza">
+    <meta name="description" content="Desafio Interactive rating component
+do Front-end Mentor    ">
+    <meta name="keywords" content="HTML,CSS,JavaScript, SASS, BEM, Front-end mentor">
+
+    <link rel="shortcut icon" href="./assets/images/favicon-32x32.png">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+    <title>Interactive rating component</title>
+</head>
+
+<body>
+    <main class="main">
+        <div class="main__container">
+            <div class="main__choiceAvaliation">
+                <div class="main__content">
+                    <div class="bg__img">
+                        <img src="./assets/images/icon-star.svg" alt="Icon star for avaliation">
+                    </div>
+                    <h1>How did we do?</h1>
+                    <p>Please let us know how we did with your support request.
+                        All feedback is appreciated to help us improve our
+                        offering!
+                    </p>
+                </div>
+                <div class="main__avaliation">
+                    <form>
+                        <ul class="form-list">
+                            <div onclick="selected(1)" class="bg__item el1">
+                                <li class="form-list__item">1</li>
+                            </div>
+                            <div onclick="selected(2)" class="bg__item el2">
+                                <li class="form-list__item">2</li>
+                            </div>
+                            <div onclick="selected(3)" class="bg__item el3">
+                                <li class="form-list__item">3</li>
+                            </div>
+                            <div onclick="selected(4)" class="bg__item el4">
+                                <li class="form-list__item">4</li>
+                            </div>
+                            <div onclick="selected(5)" class="bg__item el5">
+                                <li class="form-list__item">5</li>
+                            </div>
+                        </ul>
+                        <button class="btn">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="main__avaliationSuccess is-none">
+                <img src="./assets/images/illustration-thank-you.svg" alt="Thank you for your avaliation">
+                <div class="main__selected">
+                        <p></p>
+                </div>
+    
+                <p class="main__header">Thank you!</p>
+                <p>We appreciate you taking the time to give a 
+                        rating. If you ever need more support, don't
+                        hesitate to get in touch!
+                </p>
+            </div> 
+        </div>
+    </main>
+
+    <script src="./assets/script/script.js"></script>
+</body>
+
+</html>

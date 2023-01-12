@@ -1,0 +1,168 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+
+
+- Font size (paragraph): 15px
+
+### Font
+
+- Weights: 400, 700
+*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+  font-family: "Overpass", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(216deg, 12%, 8%);
+  padding: 0px 25px;
+}
+
+.bg__img, .bg__item {
+  background-color: #262f38;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+}
+
+p {
+  color: hsl(217deg, 12%, 63%);
+  width: 100%;
+}
+
+h1, .main__header {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main {
+  background-color: #171e28;
+  max-width: 385px;
+  height: 385px;
+  border-radius: 15px;
+}
+main .main__container {
+  padding: 25px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .main__container .is-selected {
+  background-color: hsl(25deg, 97%, 53%);
+}
+main .main__container .is-selected li {
+  color: white !important;
+}
+main .main__container .is-not-clicked {
+  pointer-events: none;
+}
+main .main__container .main__choiceAvaliation .main__content .bg__img {
+  margin-bottom: 20px;
+}
+main .main__container .main__choiceAvaliation .main__content p {
+  margin-bottom: 30px;
+}
+main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+  margin-bottom: 25px;
+}
+main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list .bg__item {
+  color: white;
+  padding-top: 3px;
+  cursor: pointer;
+}
+main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list .bg__item:hover {
+  background-color: #7c8798;
+}
+main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list .bg__item:hover li {
+  color: white;
+}
+main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list li {
+  color: hsl(217deg, 12%, 63%);
+}
+main .main__container .main__choiceAvaliation .main__avaliation form .btn {
+  width: 100%;
+  height: 45px;
+  border-radius: 99px;
+  background-color: hsl(25deg, 97%, 53%);
+  color: rgb(246, 214, 155);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+main .main__container .main__choiceAvaliation .main__avaliation form .btn:hover {
+  background-color: white;
+  color: hsl(25deg, 97%, 53%);
+}
+main .main__container .main__avaliationSuccess {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main .main__container .main__avaliationSuccess p {
+  text-align: center;
+  width: 101%;
+}
+main .main__container .main__avaliationSuccess img {
+  margin-bottom: 20px;
+}
+main .main__container .main__avaliationSuccess .main__selected {
+  background-color: #262f38;
+  height: 30px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 99px;
+  margin-bottom: 30px;
+}
+main .main__container .main__avaliationSuccess .main__selected p {
+  color: hsl(25deg, 97%, 53%);
+}
+main .main__container .is-none {
+  display: none;
+}
+
+@media (min-width: 425px) {
+  body {
+    font-size: 15px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+  .bg__img, .bg__item {
+    width: 45px;
+    height: 45px;
+  }
+  .btn {
+    font-size: 14px !important;
+  }
+}
