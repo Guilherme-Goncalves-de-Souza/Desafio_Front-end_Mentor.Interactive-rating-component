@@ -1,20 +1,3 @@
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-
-
-- Font size (paragraph): 15px
-
-### Font
-
-- Weights: 400, 700
-*/
 * {
   padding: 0;
   margin: 0;
@@ -34,7 +17,7 @@ body {
   padding: 0px 25px;
 }
 
-.bg__img, .bg__item {
+.bg__img, li {
   background-color: #262f38;
   width: 40px;
   height: 40px;
@@ -71,8 +54,6 @@ main .main__container {
 }
 main .main__container .is-selected {
   background-color: hsl(25deg, 97%, 53%);
-}
-main .main__container .is-selected li {
   color: white !important;
 }
 main .main__container .is-not-clicked {
@@ -91,19 +72,13 @@ main .main__container .main__choiceAvaliation .main__avaliation form ul.form-lis
   list-style: none;
   margin-bottom: 25px;
 }
-main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list .bg__item {
-  color: white;
-  padding-top: 3px;
-  cursor: pointer;
-}
-main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list .bg__item:hover {
-  background-color: #7c8798;
-}
-main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list .bg__item:hover li {
-  color: white;
-}
 main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list li {
   color: hsl(217deg, 12%, 63%);
+  cursor: pointer;
+}
+main .main__container .main__choiceAvaliation .main__avaliation form ul.form-list li:hover {
+  background-color: #7b8899;
+  color: white;
 }
 main .main__container .main__choiceAvaliation .main__avaliation form .btn {
   width: 100%;
@@ -158,7 +133,7 @@ main .main__container .is-none {
   h1 {
     font-size: 28px;
   }
-  .bg__img, .bg__item {
+  .bg__img, li {
     width: 45px;
     height: 45px;
   }

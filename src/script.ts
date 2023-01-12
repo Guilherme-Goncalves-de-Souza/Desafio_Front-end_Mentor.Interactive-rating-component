@@ -18,7 +18,6 @@ function selected(selectedNumber: number): void{
 
     if(formItem.classList.contains('is-selected')){
         notTwoSelected(selectedNumber)
-        console.log(selectedNumber)
     } 
     else{
         el1.classList.remove('is-not-clicked');
